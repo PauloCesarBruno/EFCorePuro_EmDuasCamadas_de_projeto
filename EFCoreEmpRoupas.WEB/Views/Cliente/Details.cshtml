@@ -1,0 +1,69 @@
+﻿@model EFCoreEmpRoupas.DATA.Models.Cliente
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes do cliente</h2>
+
+<div>
+    <h4>Confira os detalhes abaixo</h4>
+    <hr />
+
+    <div>
+        <a class="btn btn-success btn-sm" asp-action="Edit" asp-route-id="@Model.Id"><i class="fa fa-pencil-square-o"></i> Alterar cliente</a>
+        <a class="btn btn-primary btn-sm" asp-action="Index"><i class="fa fa-arrow-left"> Voltar</i></a>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-md">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="card">
+                    <div class="card-header">Informações do Cliente</div>
+                    <div class="card-body row">
+
+                        <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Nome" class="control-label"></label>
+                                <input disabled asp-for="Nome" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label asp-for="CPF" class="control-label"></label>
+                                <input disabled asp-for="CPF" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br />
+
+                <div class="card">
+                    <div class="card-header">Contato</div>
+                    <div class="card-body row">
+
+                        <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Telefone" class="control-label"></label>
+                                <input disabled asp-for="Telefone" class="form-control" />
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label asp-for="Email" class="control-label"></label>
+                                <input disabled asp-for="Email" class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br />
+            </form>
+        </div>
+    </div>
+</div>

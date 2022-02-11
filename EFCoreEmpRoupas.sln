@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreEmpRoupas.WEB", "EFCoreEmpRoupas.WEB\EFCoreEmpRoupas.WEB.csproj", "{11BF6A9B-D667-423C-9CBE-C7E38EAD67A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreEmpRoupas.DATA", "EFCoreEmpRoupas.DATA\EFCoreEmpRoupas.DATA.csproj", "{B093EC6A-36C0-43AC-BDE9-B6CBD74D1955}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11BF6A9B-D667-423C-9CBE-C7E38EAD67A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BF6A9B-D667-423C-9CBE-C7E38EAD67A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BF6A9B-D667-423C-9CBE-C7E38EAD67A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BF6A9B-D667-423C-9CBE-C7E38EAD67A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B093EC6A-36C0-43AC-BDE9-B6CBD74D1955}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B093EC6A-36C0-43AC-BDE9-B6CBD74D1955}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B093EC6A-36C0-43AC-BDE9-B6CBD74D1955}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B093EC6A-36C0-43AC-BDE9-B6CBD74D1955}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1EE4255-40F3-428C-8CD7-BBEE2C4D2CAE}
+	EndGlobalSection
+EndGlobal

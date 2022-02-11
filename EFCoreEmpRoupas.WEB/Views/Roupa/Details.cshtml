@@ -1,0 +1,42 @@
+﻿@model EFCoreEmpRoupas.DATA.Roupa
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes da Roupa</h2>
+
+<div>
+    <h4>Confira os detalhes abaixo</h4>
+    <hr />
+
+    <div>
+        <a class="btn btn-success btn-sm" asp-action="Edit" asp-route-id="@Model.Id"><i class="fa fa-pencil-square-o"></i> Alterar Roupa</a>
+        <a class="btn btn-primary btn-sm" asp-action="Index"><i class="fa fa-arrow-left"> Voltar</i></a>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-sm-8">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="card">
+                    <div class="card-header">Informações sobre a Roupa</div>
+                    <div class="card-body row">
+
+                        <div class="form-group col-sm-8">
+                            <label asp-for="RoupaNome" class="control-label"></label>
+                            <input disabled asp-for="RoupaNome" class="form-control" />
+
+                            <label asp-for="Descricao" class="control-label"></label>
+                            <input disabled asp-for="Descricao" class="form-control" />
+
+                            <label asp-for="ValorLocacao" class="control-label"></label>
+                            <input disabled asp-for="ValorLocacao" class="form-control" />
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>

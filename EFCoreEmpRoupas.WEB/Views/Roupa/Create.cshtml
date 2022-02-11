@@ -1,0 +1,58 @@
+﻿@model EFCoreEmpRoupas.DATA.Roupa
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Nova Roupa</h2>
+
+<h4>Preencha os campos abaixo para inclusão de uma nova Roupa</h4>
+
+<br />
+
+
+<div class="row">
+    <div class="col-sm-8">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="card">
+                <div class="card-header">Informações da Roupa</div>
+                <div class="card-body row">
+
+                    <div class="form-group col-sm-8">
+                        <label asp-for="RoupaNome" class="control-label"></label>
+                        <input asp-for="RoupaNome" class="form-control" />
+                        <div>
+                            <span asp-validation-for="RoupaNome" class="text-danger"></span>
+                        </div>
+
+
+                        <label asp-for="Descricao" class="control-label"></label>
+                        <input asp-for="Descricao" class="form-control" />
+                        <div>
+                            <span asp-validation-for="Descricao" class="text-danger"></span>
+                        </div>
+
+
+                        <label asp-for="ValorLocacao" class="control-label"></label>
+                        <input asp-for="ValorLocacao" class="form-control" />
+                        <div>
+                            <span asp-validation-for="ValorLocacao" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-sm "><i class="fa fa-plus-circle"> Incluir Roupa</i></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

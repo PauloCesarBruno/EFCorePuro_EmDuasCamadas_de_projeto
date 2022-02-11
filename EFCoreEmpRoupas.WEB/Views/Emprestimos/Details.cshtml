@@ -1,0 +1,56 @@
+﻿@model VW_RoupaEmprestimo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Detalhes do emprestimo</h2>
+
+<div>
+    <h4>Confira os detalhes abaixo</h4>
+    <hr />
+    <div>
+        <a class="btn btn-success btn-sm" asp-action="Edit" asp-route-id="@Model.Id"><i class="fa fa-pencil-square-o"></i> Alterar emprestimo</a>
+        <a class="btn btn-primary btn-sm" asp-action="Index"><i class="fa fa-arrow-left"></i> Voltar</a>
+    </div>
+
+    <br />
+
+    <div class="row">
+        <div class="col-sm-8">
+            <form asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="card">
+                    <div class="card-header">Informações sobre o emprestimo</div>
+                    <div class="card-body row">
+
+                        <div class="form-group col-sm-6">
+                            <label asp-for="Nome" class="control-label"></label>
+                            <input disabled asp-for="Nome" class="form-control" />
+
+                            <label asp-for="RoupaNome" class="control-label"></label>
+                            <input disabled asp-for="RoupaNome" class="form-control" />
+                        </div>
+
+                        <div class="form-group col-sm-4">
+
+                            <label asp-for="DataEmprestimo" class="control-label"></label>
+                            <input disabled asp-for="DataEmprestimo" class="form-control" />
+
+                            <label asp-for="DataEntrga" class="control-label"></label>
+                            <input disabled asp-for="DataEntrga" class="form-control" />
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <div class="form-group form-check">
+                                <br />
+                                <label class="form-check-label">
+                                    <input disabled class="form-check-input" asp-for="Entegue" /> @Html.DisplayNameFor(model => model.Entegue)
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
