@@ -2,12 +2,9 @@
 using EFCoreEmpRoupas.DATA.Models;
 using EFCoreEmpRoupas.DATA.Services;
 using EFCoreEmpRoupas.WEB.Models;
-using EFCoreEmpRoupas.WEB.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 
 namespace EFCoreEmpRoupas.WEB.Controllers
